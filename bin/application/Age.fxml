@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AgeEventHandler">
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints />
+    <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="275.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="176.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="94.0" stroke="BLACK" strokeDashOffset="3.0" strokeLineCap="ROUND" strokeMiterLimit="100.0" strokeType="INSIDE" translateY="5.0" width="196.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.rowSpan="2">
+         <fill>
+            <RadialGradient centerX="0.48342541436464087" centerY="0.5" cycleMethod="REPEAT" focusAngle="-106.26" focusDistance="0.02298850574712641" radius="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.575659453868866" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007662835249042145">
+                     <color>
+                        <Color green="0.575659453868866" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6590038314176245">
+                     <color>
+                        <Color green="0.30000001192092896" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.30000001192092896" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill></Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" stroke="BLACK" strokeType="INSIDE" translateY="-5.0" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="16.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="16.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+      <DatePicker fx:id="date" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <Label text="Enter birthdate:" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <Button mnemonicParsing="false" onAction="#handleBack" text="Back" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" onAction="#handleCalculate" text="Calculate" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+      <Label text="Your age:" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Label fx:id="ageMonth" text="Month" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Label fx:id="ageYear" text="Year" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+      <Label fx:id="ageDay" text="Day" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+      <Button mnemonicParsing="false" onAction="#handleClear" text="Clear" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="5.0" stroke="BLACK" strokeType="INSIDE" width="200.0" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+      <Label text="Next Birthday:" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" stroke="BLACK" strokeType="INSIDE" translateY="-5.0" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+      <Label fx:id="nextDay" text="Day" translateY="-5.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+      <Label fx:id="nextDate" text="Months/Days" translateY="-5.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="BOTTOM" />
+      <Label text="SUMMARY" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label text="Years" translateX="-15.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+      <Label text="Months" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+      <Label text="Weeks" translateX="15.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+      <Label text="Days" translateX="-15.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="TOP" />
+      <Label text="Hours" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="TOP" />
+      <Label text="Minutes" translateX="15.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="TOP" />
+      <Label fx:id="summaryYears" text="0" translateX="-15.0" translateY="-10.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" />
+      <Label fx:id="summaryMonths" text="0" translateY="-10.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" />
+      <Label fx:id="summaryWeeks" text="0" translateX="15.0" translateY="-10.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM" />
+      <Label fx:id="summaryDays" text="0" translateX="-15.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+      <Label fx:id="summaryHours" text="0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+      <Label fx:id="summaryMinutes" text="0" translateX="15.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+   </children>
+</GridPane>

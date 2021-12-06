@@ -1,0 +1,16 @@
+microgram	microgram	1
+microgram	milligram	0.001
+microgram	gram	0.000001
+microgram	Kilogram	0.000000001
+milligram	microgram	1000
+milligram	milligram	1
+milligram	gram	0.001
+milligram	Kilogram	0.000001
+gram	microgram	1000000
+gram	milligram	1000
+gram	gram	1
+gram	Kilogram	0.001
+Kilogram	microgram	1000000000
+Kilogram	milligram	1000000
+Kilogram	gram	1000
+Kilogram	Kilogram	1

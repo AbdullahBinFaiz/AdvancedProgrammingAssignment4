@@ -1,0 +1,12 @@
+mps	ftps	3.28084
+mps	Kmph	3.6
+mps	Mph	2.23694
+ftps	mps	0.3048
+ftps	Kmph	1.09728
+ftps	Mph	0.681818
+Kmph	mps	0.277778
+Kmph	ftps	0.911344
+Kmph	Mph	0.621371
+Mph	mps	0.44704
+Mph	ftps	1.46667
+Mph	Kmph	1.60934
